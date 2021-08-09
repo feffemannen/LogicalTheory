@@ -15,6 +15,14 @@
 
 \olsection{\usetoken{S}{derivability} and the Propositional Connectives}
 
+\begin{explain}
+  We establish that the !!{derivability} relation~$\Proves$ of the
+  sequent calculus is strong enough to establish some basic facts
+  involving the propositional connectives, such as that $!A \land !B
+  \Proves !A$ and $!A, !A \lif !B \Proves !B$ (modus ponens). These
+  facts are needed for the proof of the completeness theorem.
+\end{explain}
+
 \begin{prop}\ollabel{prop:provability-land}
   \begin{enumerate}
   \item \ollabel{prop:provability-land-left} Both $!A \land !B \Proves
@@ -37,7 +45,7 @@
       \RightLabel{\LeftR{\land}}
       \UnaryInf$!A \land !B \fCenter !B$
     \end{prooftree}
-    \item Here is a !!{derivation} of the sequent $!A, !B \Sequent !A \land !B$:
+    \item Here is !!a{derivation} of the sequent $!A, !B \Sequent !A \land !B$:
     \begin{prooftree}
       \Axiom$!A \fCenter !A$
       \Axiom$!B \fCenter !B$
@@ -56,7 +64,7 @@
 
 \begin{proof}
   \begin{enumerate}
-  \item We give a !!{derivation} of the sequent $!A \lor !B, \lnot !A,
+  \item We give !!a{derivation} of the sequent $!A \lor !B, \lnot !A,
     \lnot !B \Sequent$:
     \begin{prooftree}
       \Axiom$!A \fCenter !A$

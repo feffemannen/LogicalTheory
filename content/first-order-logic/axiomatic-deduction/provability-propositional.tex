@@ -12,6 +12,14 @@
 
 \olsection{\usetoken{S}{derivability} and the Propositional Connectives}
 
+\begin{explain}
+  We establish that the !!{derivability} relation~$\Proves$ of
+  axiomatic deduction is strong enough to establish some basic facts
+  involving the propositional connectives, such as that $!A \land !B
+  \Proves !A$ and $!A, !A \lif !B \Proves !B$ (modus ponens). These
+  facts are needed for the proof of the completeness theorem.
+\end{explain}
+
 \begin{prop}\ollabel{prop:provability-land}
   \begin{enumerate}
   \item \ollabel{prop:provability-land-left} Both $!A \land !B \Proves
@@ -40,7 +48,7 @@
 \begin{proof}
   \begin{enumerate}
   \item From \olref[prp]{ax:lnot1} we get $\Proves \lnot !A \lif (!A
-    \lif \lfalse)$ and $\Proves \lnot !A \lif (!A \lif \lfalse)$. So
+    \lif \lfalse)$ and $\Proves \lnot !B \lif (!B \lif \lfalse)$. So
     by the deduction theorem, we have $\{\lnot !A\} \Proves !A \lif
     \lfalse$ and $\{\lnot !B\} \Proves !B \lif \lfalse$. From
     \olref[prp]{ax:lor3} we get $\{\lnot !A, \lnot !B\} \Proves (!A
