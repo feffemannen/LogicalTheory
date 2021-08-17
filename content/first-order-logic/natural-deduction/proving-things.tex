@@ -264,6 +264,8 @@ On the right side we use the same strategy, except we get $!A$ by~\FalseCl:
 \end{prooftree}
 \end{ex}
 
+
+
 \begin{prob}
 Give !!{derivation}s of the following:
 \begin{enumerate}
@@ -275,6 +277,33 @@ Give !!{derivation}s of the following:
 \item \( \lnot !A \) from the assumption \( ( !A \lif \lnot !A ) \),
 \item \( !A \) from the assumptions \( !B \lif !A \) and \( \lnot !B \lif !A \).
 \end{enumerate}
+\end{prob}
+
+\begin{prob}
+Give !!{derivation}s of the following:
+\begin{enumerate}
+  \item $((!A \land !B) \land !C) \Proves (!B \lor \lnot !C)$
+  \item $(!A \lif !C), (!B \lif \lnot !C) \Proves \lnot (!A \land !B)$
+  \item $((!A \land !B) \land (!A \lif !C)) \Proves (!C \land !B)$
+  \item $((!A \land !C) \lor (!B \land \lnot !C) \Proves (!A \lor \lnot !C)$
+  \item $(!A \lif !B), (!B \lif \lnot !C) \Proves (!A \lif \lnot !C)$
+  
+  \item $(!A \lif !B), (!B \lif \lnot !C) \Proves (!C \lif \lnot !A)$
+  \item $(!A \lif !C) \Proves \lnot (!A \land  \lnot !C)$
+  \item $(!A \land \lnot !C) \Proves \lnot (!A \lif !C)$
+  \item $(!A \lor !B), \lnot !B \Proves !A$
+  \item $(!A \lif ((!A \lif !B) \lif !A))$
+  
+  \item $(!B \lor \lnot \lnot \lnot !A) \Proves (\lnot !A \lor \lnot \lnot !B)$
+  % \item $\Proves ((!A \lif \lnot !A) \lif \lnot !A)$ % duplicate
+  \item $(!A \land !B), (!B \lif !C), (!A \lif \lnot !C) \Proves !D$
+  \item $(!C \lif (!A \lif \lnot !B)) \Proves ((!A \land !B) \lif \lnot !C)$
+  \item $\Proves ((!B \lor !C) \lor (!A \lif !A))$
+  
+  \item $(!A \lor (!B \lif !C)), \lnot !C \Proves (\lnot !A \lif \lnot !B)$
+  \item $(!A \lif !B), (\lnot !A \lif !B) \Proves !B$
+  \item $(((!A \lif !B) \lif !A) \lif !A)$
+ \end{enumerate} 
 \end{prob}
 
 \end{document}
